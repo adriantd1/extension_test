@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Who's That Professor?",
+  "version": "0.1",
+
+  "content_scripts":[
+    {
+      "matches":[
+        "http://www.ratemyprofessors.com/ShowRatings.jsp?tid=103439",
+        "file:///C:/Users/Chak%C3%A9/Desktop/extension_test/index.html"
+      ],
+      "js": ["jquery.min.js", "content.js"]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
